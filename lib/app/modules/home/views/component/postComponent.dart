@@ -1,6 +1,6 @@
 import 'package:aw_basim_flutter/app/modules/home/models/postModel.dart';
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
 class PostComponent extends StatelessWidget {
 final PostModel post;
 
@@ -14,6 +14,7 @@ final PostModel post;
         horizontal: 20
       ),
       child: Material(
+        type: MaterialType.card,
         borderRadius: BorderRadius.circular(15),
         child: Column(
           children: [
@@ -28,7 +29,7 @@ final PostModel post;
 
                     Row(
                       children: [
-                        Text("رقم الدرس"),
+                        Text("Lesson number".tr),
                           Text(' - '),
                                           Text(post.lessonNumber.toString()),
 
